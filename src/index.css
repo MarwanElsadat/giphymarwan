@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,210 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 2fr;
+    
+    flex-direction: row ;
+  }  
+  .gride{
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+		justify-content: center;
+  }
+  
+  .cardbta3i {
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    width: 40vw;
+    height: 50%;
+		margin-bottom: 1rem;
+    margin-left: 1rem;
+
+  }
+
+.cardbta3i h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+.cardbta3i h5 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cardbta3i p { 
+  line-height: 1.4;
+}
+
+.cardbta3i span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+} 
+}
+
+@media only screen and (max-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+    
+    flex-direction: row ;
+  }  
+  .gride{
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+		justify-content: center;
+  }
+  .cardbta3i {
+    box-sizing: border-box;
+    /* margin: 10px 0px 10px 10px; */
+    width: 340px;
+    height: 50%;
+		margin-bottom: 10%;
+  }
+}
+.cardbta3i {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.cardbta3i:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.cardbta3i article {
+  padding: 20px;
+}
+
+/* typography */
+.cardbta3i h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cardbta3i p { 
+  line-height: 1.4;
+}
+
+.cardbta3i span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+
+
+@media only screen and (min-width: 850px) {
+  
+  .cardmarwan {
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+
+    width: 50vw;
+    height: 50%;
+		margin-bottom: 2%;
+
+  }
+
+.cardmarwan h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+.cardmarwan h5 {
+  font-size: 30px;
+  margin: 0;
+  color: #333;
+}
+
+.cardmarwan p { 
+  line-height: 1.4;
+}
+
+.cardmarwan span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+} 
+}
+
+@media only screen and (max-width: 850px) {
+  
+  .cardmarwan {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 340px;
+    height: 50%;
+		margin-bottom: 10%;
+   
+  }
+}
+.cardmarwan {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.cardmarwan:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.cardmarwan article {
+  padding: 20px;
+}
+
+/* typography */
+.cardmarwan h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cardmarwan p { 
+  line-height: 1.4;
+}
+
+.cardmarwan span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
 }
