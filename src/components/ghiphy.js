@@ -1,7 +1,7 @@
 import { Grid } from '@giphy/react-components'
 import { GiphyFetch } from '@giphy/js-fetch-api'
 import Button from 'react-bootstrap/Button'
-import {Nav, Form, FormControl, Container, Navbar} from 'react-bootstrap'
+import {Nav, Form, FormControl, Navbar} from 'react-bootstrap'
 import {useState} from 'react'
 
 // use @giphy/js-fetch-api to fetch gifs
@@ -16,7 +16,6 @@ const Giphy = () => {
     const fetchGifs = (offset) => gf.trending({ offset, limit: 10 })
     const fetchSearchGifs = (offset) => gf.search(value, { offset, sort: 'relevant', lang: 'en', limit: 10, type: 'stickers' })
     const[show,setShow]=useState(false)
-    const[searchgf,setSearchGf]=useState('')
 
     function Searching(props) {
         const searched = props.searched;
@@ -31,12 +30,7 @@ const Giphy = () => {
 
 
 
-    const handleSubmit = (evt) => {
-        evt.preventDefault();
-
-        setShow(true)
-    }
-
+  
     return (
         <div>
             <div
