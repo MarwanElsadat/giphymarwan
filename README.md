@@ -3,7 +3,10 @@
 ## Details about web-app
 
 -This app uses the Giphy  apis for fetching the latest trending GIfs nd for searching through the Giphy wesbsite.
+
 -The search field can be used to search for Gifs on the Giphy website.
+
+-This website has been deployed to Netlify and can be accessed through this link https://marwanelsadatgiphy.netlify.app
 
 
 This project has been created for the fatura frontend task.
