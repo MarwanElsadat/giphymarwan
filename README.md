@@ -1,14 +1,15 @@
 # Fatura Task
 
+## Details about web-app
+
+-This app uses the Giphy  apis for fetching the latest trending GIfs nd for searching through the Giphy wesbsite.
+-The search field can be used to search for Gifs on the Giphy website.
+
+
 This project has been created for the fatura frontend task.
 ## Available Scripts
 
 In the project directory, you can run:
-
-### Details about web-app
-
--This app uses the Giphy  apis for fetching the latest trending GIfs nd for searching through the Giphy wesbsite.
--The search field can be used to search for Gifs on the Giphy website.
 
 ### `npm start`
 
