@@ -1,7 +1,7 @@
 import { Grid } from '@giphy/react-components'
 import { GiphyFetch } from '@giphy/js-fetch-api'
 import Button from 'react-bootstrap/Button'
-import {Nav, Form, FormControl, Navbar} from 'react-bootstrap'
+import {Nav, Form, FormControl, Navbar, Container} from 'react-bootstrap'
 import {useState} from 'react'
 
 // use @giphy/js-fetch-api to fetch gifs
@@ -17,6 +17,7 @@ const Giphy = () => {
     const fetchSearchGifs = (offset) => gf.search(value, { offset, sort: 'relevant', lang: 'en', limit: 10, type: 'stickers' })
     const[show,setShow]=useState(false)
 
+    {/*Returns gifs based on the value in the text field*/}
     function Searching(props) {
         const searched = props.searched;
         const value = props.value;
@@ -33,6 +34,7 @@ const Giphy = () => {
   
     return (
         <div>
+          {/*   background color*/}
             <div
 			style={{
 				background:
@@ -46,8 +48,9 @@ const Giphy = () => {
 				height:'80px'
 			}}
 		>
+                {/*Navigation Bar*/}
 				<Navbar>
-
+          {/* Heading*/}
 					<Navbar.Brand
 						onClick={() => {
 
@@ -56,7 +59,7 @@ const Giphy = () => {
 					>
 						 <h4 style = {{fontSize: '200%',fontWeight: '1000',  paddingTop:'2%',paddingLeft:'2%'}}>FATURA</h4>
 					</Navbar.Brand>
-
+          {/*Search Field*/}
 					<Nav
 						className='justify-content-end'
 						style={{
@@ -84,11 +87,10 @@ const Giphy = () => {
 
         </Navbar>        
     </div>
-
-        <div className="mx-auto" style={{marginTop:'5%'}}>
+                  {/*Reasults from the giphy api*/}    
+        <div className="justify-content-center" style={{marginTop:'5%'}}>
      <Searching searched={show} value={value}/>
          </div>
-        
         </div>
     )
 
